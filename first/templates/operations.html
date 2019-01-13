@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Операции сложения на сайте</title>
+</head>
+<body>
+{% include 'menu.html' %}
+{% for item in operations %}
+<p>{{ item.first }} + {{ item.second }} = <b>{{ item.result }}</b></p>
+{% endfor %}
+
+</body>
+</html>

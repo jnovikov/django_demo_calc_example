@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+    {% include 'menu.html' %}
+    <h1>Калькулятор</h1>
+    {% if form.errors %}
+    Ошибки:
+        {% for key, value in form.errors.items %}
+        <li>Поле {{key}} : {{value}}</li>
+        {% endfor %}
+    {% endif %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.first.label }}: {{ form.first }}<br>
+        {{ form.second.label }}: {{ form.second }}<br>
+        <input type="submit" value="Посчитать">
+    </form>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+    {% include 'menu.html' %}
+    <h1>Калькулятор</h1>
+
+    {% if nothing_entered %}
+
+    <p>Вы не ввели числа</p>
+
+    {% else %}
+
+    <p>Первое число: {{ first }}</p>
+    <p>Второе число: {{ second }}</p>
+    <p>Сумма чисел {{ first }} и {{ second }} равна {{ result }}</p>
+
+    {% endif %}
+
+
+</body>
+</html>

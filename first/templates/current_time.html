@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Текущее время в Москве</title>
+</head>
+<body>
+    {% include 'menu.html' %}
+    <h1>Текущее время</h1>
+    <p>Сейчас: {{ now.hour }} часов, {{ now.minute }} минут и {{ now.second }} секунд.</p>
+
+</body>
+</html>

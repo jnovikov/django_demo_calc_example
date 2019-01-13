@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Index page</title>
+    </head>
+
+    <body>
+        {% include 'menu.html' %}
+
+        <h1>Welcome to our site!</h1>
+        <p>Мы рады тебя видеть у нас в гостях =)</p>
+        <h5>Параметры этого сайта:</h5>
+        <ul>
+            <li>Автор: {{ author }}</li>
+            <li>Дата создания: {{ creation_date }}</li>
+            <li>Количество страниц: {{ pages_count }}</li>
+        </ul>
+
+
+    </body>
+</html>
